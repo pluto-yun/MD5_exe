@@ -1,0 +1,26 @@
+﻿<Window x:Name="MD5校验工具_by_yun" x:Class="MD5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MD5"
+        mc:Ignorable="d"
+        Title="MD5校验工具_by_yun" Height="400" Width="700">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid Width="650" Height="350">
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="100" Margin="54.875,47.354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.5,0.5" Foreground="#FF21F90B" Background="Black" BorderBrush="#FF68FF00" FontSize="22" AllowDrop="True" PreviewDragOver="textBox_PreviewDragOver" PreviewDrop="textBox_PreviewDrop" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="textBox_1" HorizontalAlignment="Left" Height="100" Margin="52.368,194.708,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.5,0.5" Foreground="#FF21F90B" Background="Black" BorderBrush="#FF68FF00" FontSize="22" PreviewDragOver="textBox_1_PreviewDragOver" PreviewDrop="textBox_1_PreviewDrop">
+
+        </TextBox>
+        <Button x:Name="start" Content="开始对比" HorizontalAlignment="Left" Margin="552.368,219.708,0,0" VerticalAlignment="Top" Width="100" Background="#FF9B9999" Height="50" FontSize="22" Click="Start_Click"/>
+        <Button x:Name="Select" Content="..." HorizontalAlignment="Left" Margin="474.875,47.354,0,0" VerticalAlignment="Top" Width="30" Height="100" FontSize="22" Click="Select_Click"/>
+        <Button x:Name="Select_2" Content="..." HorizontalAlignment="Left" Margin="472.368,194.708,0,0" VerticalAlignment="Top" Width="30" Height="100" FontSize="22" Click="Select_2_Click"/>
+        <TextBlock x:Name="result" HorizontalAlignment="Left" Margin="552.368,47.354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="100" Width="100" FontSize="36" TextAlignment="Center"/>
+
+    </Grid>
+</Window>
